@@ -1,30 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 
-*{
+* {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-body{
+body {
     padding: 0;
     margin: 0;
 }
 
-#container{
+#container {
     width: 1024px;
-    height: 1000px;
     background: #404040;
     margin: 0 auto;
-    
+
 }
 
-#container-interno{
+#container-interno {
     width: 100%;
-    padding: 10px;
+    padding: 0 20px;
 }
 
-.header{
+.header {
     width: 100%;
     height: 135px;
     background-color: #0D0D0E;
@@ -32,24 +31,218 @@ body{
     grid-template-columns: 1fr 2fr 1fr 1fr;
     gap: 10px;
     align-content: center;
-    padding: 10px;
+    padding: 20px;
+
 }
 
-.item{
+.item {
     color: #FFF;
-    padding: 10px;
+    padding: 20px;
 }
 
-.fundo-branco{
+.fundo-branco {
     background-color: #FFF;
 }
 
-.pesquisar{
+.pesquisar {
     width: 100%;
     padding: 5px;
 }
 
-.texto-menu{
+.texto-menu {
     color: #FFF;
     text-decoration: none;
 }
+
+.navbar {
+    width: 100%;
+    background-color: #FFF;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    text-align: center;
+    padding: 15px;
+}
+
+.texto-navbar {
+    color: #100681;
+    text-decoration: none;
+}
+
+.item-navbar {
+    align-self: center;
+}
+
+.texto-principal {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 27px;
+    /* identical to box height */
+    color: #E5E5E5;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+}
+
+.categorias-img {
+    width: 100%;
+    height: 272px;
+}
+
+.promocoes {
+    margin-top: 40px;
+}
+
+.promocoes-titulo {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 41px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.promocoes-figure{
+    background-color: #FFF;
+    text-align: center;
+    padding: 15px;
+}
+
+.promocoes-img{
+    width: 152px;
+    height: 154px;
+}
+
+/* altera o tamanho padrão de cada item do carosel */
+.carousel__slide{
+    /* define que a largura máxima de cada item do carousel vai ser de 40% o padrão é 60% */
+    max-width: var(--carousel-slide-width, 40%);
+}
+
+.banner2{
+    margin-top: 40px;
+}
+
+.banner2-img{
+    width: 100%;
+}
+
+.rodape{
+    background-color: #000;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    color: #FFF;   
+}
+
+.rodape-item{
+    /* são as colunas do rodape */
+    padding: 20px;
+}
+
+.rodape-titulo{
+    /* título de cada coluna do rodape */
+    
+
+}
+
+.rodape-texto{
+    /* itens de cada coluna do rodape */
+    /* Aqui formata os links */
+    font-size: 13px; /*tamanho da fonte*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none; /*tira o sublinhado do link*/
+    color: #C9C9C9;
+}
+
+/* .rodape-texto p{
+    padding-left: 5px;
+} */
+
+/* Final da versão Desktop */
+
+
+/* Inicio da versão Mobile */
+/* media query para versão tablet e celular */
+@media only screen and (max-width: 768px) {
+    #container{
+        width: 100%;
+    }
+
+    .header{
+        grid-template-columns: 1fr;
+        height: auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #pesquisar{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .item{
+        padding: 5px;
+    }
+
+    .navbar{
+        grid-template-columns: 1fr;
+    }
+
+    .item-navbar{
+        padding: 10px;
+    }
+
+    .categorias{
+        grid-template-columns: 1fr;
+    }
+
+    .rodape{
+        grid-template-columns: 1fr;
+    }
+
+    .carousel__slide{
+        max-width: var(--carousel-slide-width, 80%);
+        width: 70%;
+
+    }
+
+    .promocoes-img{
+        width: 100%;
+        
+        
+    }
+
+    .promocoes-figure{
+        margin: 0;
+        height: 300px;
+    }
+
+    
+
+
+
+
+
+
+
+
+    
+}
+/* Final da versão Mobile */
+
+
