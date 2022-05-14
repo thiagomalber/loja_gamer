@@ -173,6 +173,20 @@ body {
     padding-left: 5px;
 } */
 
+/* Altera a cor dos marcadores do carousel(bolinhas) */
+.carousel__dots{
+    color:#FFF;
+    /* margin-top: -70px !important; */
+}
+
+/* Consultar documentação do site */
+/* deixa espessura da seta mais grossa */
+.carousel {
+    --carousel-button-svg-stroke-width: 4.5;
+}
+
+
+
 /* Final da versão Desktop */
 
 
@@ -216,20 +230,25 @@ body {
     }
 
     .carousel__slide{
-        max-width: var(--carousel-slide-width, 80%);
-        width: 70%;
-
+        max-width: var(--carousel-slide-width, 100%);
+        width: 100%;
     }
 
     .promocoes-img{
         width: 100%;
-        
-        
     }
 
     .promocoes-figure{
         margin: 0;
         height: 300px;
+    }
+
+    .carrinho-texto{
+        display: none;
+    }
+
+    .oculta-navbar{
+        display: none;
     }
 
     
